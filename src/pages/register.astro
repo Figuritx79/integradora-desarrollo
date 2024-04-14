@@ -2,21 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Login">
-  <!-- <form action="post" class="flex justify-center items-center">
-    <div>
-      <h1>Inicia sesion</h1>
-    </div>
-    <div>
-      <label for="mail"></label>
-      <input type="text" name="" id="mail" />
-    </div>
-
-    <div>
-      <label for="pass"></label>
-      <input type="text" name="" id="pass" />
-    </div>
-  </form> -->
+<Layout title="Registrar">
   <div class="bg-[#F9FAFB] h-screen w-screen flex items-center">
     <div class="h-max mx-auto flex flex-col items-center">
       <a href="/"
@@ -49,15 +35,21 @@ import Layout from "../layouts/Layout.astro";
             placeholder="******"
           />
         </div>
-        <div class="flex">
-          <div class="w-1/2">
-            <input type="checkbox" name="remeberMe" />
-            <label for="remeberMe">Recordar</label>
-          </div>
-          <div class="w-1/2">
-            <a class="font-bold text-[#13293b]" href="">Password Olvidada?</a>
-          </div>
+        <div>
+          <label
+            class="text-gray-600 font-bold inline-block pb-2"
+            for="password"
+          >
+            Confirmar Password</label
+          >
+          <input
+            class="border border-gray-400 focus:outline-slate-400 rounded-md w-full shadow-sm px-5 py-2"
+            type="password"
+            name="password"
+            placeholder="******"
+          />
         </div>
+
         <div>
           <input
             class="bg-[#1e293b] w-full py-2 rounded-md text-white font-bold cursor-pointer hover:bg-[#64748b]"
@@ -67,8 +59,8 @@ import Layout from "../layouts/Layout.astro";
         </div>
 
         <p class="text-sm text-gray-500 mt-10">
-          No tienes cuenta? <a href="/register" class="text-[#1e293b] font-bold"
-            >Registrate</a
+          Ya tienes cuenta? <a href="/login" class="text-[#1e293b] font-bold"
+            >Login</a
           >
         </p>
       </div>

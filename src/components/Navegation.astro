@@ -1,3 +1,13 @@
+---
+interface Props {
+  text: String;
+  text2: String;
+  text3: String;
+  text4: String;
+}
+const { text, text2, text3, text4 } = Astro.props;
+---
+
 <header
   class="flex w-full bg-slate-100 pl-[30px] pr-[10px] justify-between items-center blur-nav rounded shadow-nav sticky"
 >
@@ -9,19 +19,19 @@
   <nav class="flex">
     <ul class="list-none flex">
       <li class="hover:animate-tada">
-        <a class="inline-block padding text-cyan-950" href="#">Mujeres</a>
+        <a class="inline-block padding text-cyan-950" href="#">{text2}</a>
       </li>
       <li class="hover:animate-tada">
-        <a class="inline-block padding text-cyan-950" href="#">Hombres</a>
+        <a class="inline-block padding text-cyan-950" href="#">{text4}</a>
       </li>
       <li class="hover:animate-tada">
-        <a class="inline-block padding text-cyan-950" href="#">Categorias</a>
+        <a class="inline-block padding text-cyan-950" href="#">{text3}</a>
       </li>
       <a href="login">
         <button
           class="inline-block padding bg-[#1e293b] rounded-md text-slate-50 hover:cursor-pointer hover:animate-swing me-shodow"
         >
-          Login
+          {text}
         </button>
       </a>
     </ul>
