@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Navegation from "../components/Navegation.astro";
-import Card from "../components/Card.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Integradora">
@@ -199,19 +199,92 @@ import Card from "../components/Card.astro";
       </div>
       <!--  -->
     </section>
-
-    <style>
-      .div_bg {
-        background-image: url("/public//bg2.jpg");
-        min-height: 90vh;
-      }
-      .button_image {
-        box-shadow: 0 1px 2px #0c1a240f;
-        border: 1px solid #dde0e5;
-      }
-      .card {
-        box-shadow: 0 20px 27px #0000000d;
-      }
-    </style>
+    <!--  -->
+    <div class="mb-48 mt-12 mr-16 ml-16">
+      <section>
+        <div
+          class="p-0 relative overflow-hidden flex items-center bg-cover bg-[50%] bg-blur rounded-md"
+        >
+          <div class="faded opsity-10"></div>
+          <div class="index w-full pr-6 pl-6 mr-auto ml-auto">
+            <div
+              class="flex items-center flex-wrap mr-6 mt-0 ml-6 justify-center"
+            >
+            </div>
+            <div class="mr-auto ml-auto text-center mt-auto mb-auto">
+              <h1
+                class="margin inline-block mt-24 text-5xl font-bold text-[#1e293b]"
+              >
+                Disfruta de nuestra nuevas prendas
+              </h1>
+              <p class="text-[20px] text-[#64748b] mb-6 mt-9">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequuntur asperiores magnam, sunt facere porro sint.
+                Accusamus, perspiciatis similique placeat sunt voluptatum,
+                corporis consectetur vitae, quo animi ex molestias harum qui?
+              </p>
+              <button
+                class="mt-7 inline-block rounded-md bg-[#1e293b] p-4 h-[46px] text-white hover:cursor-pointer hover:animate-pulsing font-bold w-[250px]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-gift-fill inline"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A3 3 0 0 1 3 2.506zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43zM9 3h2.932l.023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0zm6 4v7.5a1.5 1.5 0 0 1-1.5 1.5H9V7zM2.5 16A1.5 1.5 0 0 1 1 14.5V7h6v9z"
+                  ></path>
+                </svg>
+                Ver prendas
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
+  <Footer />
+  <style>
+    .div_bg {
+      background-image: url("/public//bg2.jpg");
+      min-height: 90vh;
+    }
+    .button_image {
+      box-shadow: 0 1px 2px #0c1a240f;
+      border: 1px solid #dde0e5;
+    }
+    .card {
+      box-shadow: 0 20px 27px #0000000d;
+    }
+    .bg-blur {
+      background-image: url(https://images.unsplash.com/photo-1519642918688-7e43b19245d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2676&q=80);
+    }
+    .faded {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      background: rgba(255, 255, 255, 0)
+        linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 0.97) 80%
+        )
+        repeat scroll 0 0;
+    }
+    .opsity-10 {
+      opacity: 1 !important;
+    }
+    .index {
+      z-index: 2 !important;
+    }
+
+    .margin {
+      margin-bottom: 1.5rem !important;
+    }
+  </style>
 </Layout>
