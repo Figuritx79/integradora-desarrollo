@@ -11,15 +11,19 @@ const { text, text2, text3, text4 } = Astro.props;
 <header
   class="flex w-full bg-slate-100 pl-[30px] pr-[10px] justify-between items-center blur-nav rounded shadow-nav sticky"
 >
-  <img
-    src="/favicon.svg"
-    alt="logo"
-    class="inline-block w-16 h-16 hover:animate-pulsing text-stone-900"
-  />
+  <a href="/">
+    <img
+      src="/favicon.svg"
+      alt="logo"
+      class="inline-block w-16 h-16 hover:animate-pulsing text-stone-900"
+    />
+  </a>
   <nav class="flex">
     <ul class="list-none flex">
       <li class="hover:animate-tada">
-        <a class="inline-block padding text-cyan-950" href="#">{text2}</a>
+        <a class="inline-block padding text-cyan-950" href="dashboard"
+          >{text2}</a
+        >
       </li>
       <li class="hover:animate-tada">
         <a class="inline-block padding text-cyan-950" href="#">{text4}</a>

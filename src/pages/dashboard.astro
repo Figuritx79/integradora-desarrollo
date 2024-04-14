@@ -1,0 +1,261 @@
+---
+import Navegation from "../components/Navegation.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Eliminar">
+  <Navegation text="ADMIN" text2="" text3="" text4="" />
+  <!-- Barra lateral -->
+  <div
+    id="sideNav"
+    class="lg:block hidden bg-white w-64 h-screen fixed rounded-none border-none"
+  >
+    <!-- Items -->
+    <div class="p-4 space-y-4">
+      <!-- Inicio -->
+      <a
+        href="#"
+        aria-label="dashboard"
+        class="relative px-4 py-3 flex items-center space-x-4 rounded-lg text-white bg-gradient-to-r from-sky-600 to-cyan-400"
+      >
+        <i class="fas fa-home text-white"></i>
+        <span class="-mr-1 font-medium">Inicio</span>
+      </a>
+
+      <a
+        href="#"
+        class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-500 group"
+      >
+        <i class="fas fa-user"></i>
+        <span>Mi cuenta</span>
+      </a>
+      <a
+        href="#"
+        class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-500 group"
+      >
+        <i class="fas fa-sign-out-alt"></i>
+        <span>Cerrar sesión</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="lg:ml-64 lg:pl-4 lg:flex lg:flex-col lg:w-75% mt-5 mx-2">
+    <!-- Buscador -->
+    <div class="bg-white rounded-full border-none p-3 mb-4 shadow-md">
+      <div class="flex items-center">
+        <i class="px-3 fas fa-search ml-1"></i>
+        <input
+          type="text"
+          placeholder="Buscar usuario o prenda"
+          class="ml-3 focus:outline-none w-full"
+        />
+      </div>
+    </div>
+
+    <section class="antialiased bg-gray-100 text-gray-600 h-screen px-4">
+      <div class="flex flex-col justify-center h-full">
+        <!-- Table -->
+        <div
+          class="w-full max-w-2xl mx-auto bg-white shadow-lg rounded-sm border border-gray-200"
+        >
+          <header class="px-5 py-4 border-b border-gray-100">
+            <h2 class="font-semibold text-gray-800">Cliente o prenda</h2>
+          </header>
+          <div class="p-3">
+            <div class="overflow-x-auto">
+              <table class="table-auto w-full">
+                <thead
+                  class="text-xs font-semibold uppercase text-gray-400 bg-gray-50"
+                >
+                  <tr>
+                    <th class="p-2 whitespace-nowrap">
+                      <div class="font-semibold text-left">Nombre</div>
+                    </th>
+                    <th class="p-2 whitespace-nowrap">
+                      <div class="font-semibold text-left">Email o prenda</div>
+                    </th>
+                    <th class="p-2 whitespace-nowrap">
+                      <div class="font-semibold text-left">Eliminar</div>
+                    </th>
+                    <th class="p-2 whitespace-nowrap">
+                      <div class="font-semibold text-center">Actualizar</div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="text-sm divide-y divide-gray-100">
+                  <tr>
+                    <td class="p-2 whitespace-nowrap">
+                      <div class="flex items-center">
+                        <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3">
+                          <img
+                            class="rounded-full"
+                            src="/suit-1.jpg"
+                            width="40"
+                            height="40"
+                            alt="Alex Shatov"
+                          />
+                        </div>
+                        <div class="font-medium text-gray-800">Saco Dos</div>
+                      </div>
+                    </td>
+                    <td class="p-2 whitespace-nowrap bg-gray-200 rounded-md">
+                      <div></div>
+                    </td>
+                    <td class="p-2 whitespace-nowrap">
+                      <div
+                        class="text-center hover:cursor-pointer font-medium text-white rounded-md bg-red-700 p-2"
+                      >
+                        Eliminar
+                      </div>
+                    </td>
+                    <td class="p-2 whitespace-nowrap">
+                      <div
+                        class="bg-yellow-400 rounded-md p-2 hover:cursor-pointer text-center"
+                      >
+                        Actualiar
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="p-2 whitespace-nowrap">
+                      <div class="flex items-center">
+                        <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3">
+                          <img
+                            class="rounded-full"
+                            src="/suit-1.jpg"
+                            width="40"
+                            height="40"
+                            alt="Philip Harbach"
+                          />
+                        </div>
+                        <div class="font-medium text-gray-800">Saco</div>
+                      </div>
+                    </td>
+                    <td class="p-2 whitespace-nowrap bg-gray-200 rounded-md">
+                      <div></div>
+                    </td>
+                    <td class="p-2 whitespace-nowrap">
+                      <div
+                        class="text-center bg-red-700 rounded-md p-2 font-medium text-white hover:cursor-pointer"
+                      >
+                        Eliminar
+                      </div>
+                    </td>
+                    <td class="p-2 whitespace-nowrap">
+                      <div
+                        class="text-center bg-yellow-400 rounded-md hover:cursor-pointer p-2"
+                      >
+                        Actualizar
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="p-2 whitespace-nowrap">
+                      <div class="flex items-center">
+                        <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3">
+                          <img
+                            class="rounded-full"
+                            src="https://raw.githubusercontent.com/cruip/vuejs-admin-dashboard-template/main/src/images/user-36-07.jpg"
+                            width="40"
+                            height="40"
+                            alt="Mirko Fisuk"
+                          />
+                        </div>
+                        <div class="font-medium text-gray-800">Mirko Fisuk</div>
+                      </div>
+                    </td>
+                    <td class="p-2 whitespace-nowrap">
+                      <div class="text-left">mirkofisuk@gmail.com</div>
+                    </td>
+                    <td class="p-2 whitespace-nowrap">
+                      <div
+                        class="text-center font-medium bg-red-700 rounded-md p-2 hover:cursor-pointer text-white"
+                      >
+                        Eliminar
+                      </div>
+                    </td>
+                    <td class="p-2 whitespace-nowrap">
+                      <div
+                        class="rounded-md bg-yellow-300 p-2 hover:cursor-default text-center"
+                      >
+                        Actualiar
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="p-2 whitespace-nowrap">
+                      <div class="flex items-center">
+                        <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3">
+                          <img
+                            class="rounded-full"
+                            src="https://raw.githubusercontent.com/cruip/vuejs-admin-dashboard-template/main/src/images/user-36-08.jpg"
+                            width="40"
+                            height="40"
+                            alt="Olga Semklo"
+                          />
+                        </div>
+                        <div class="font-medium text-gray-800">Olga Semklo</div>
+                      </div>
+                    </td>
+                    <td class="p-2 whitespace-nowrap">
+                      <div class="text-left">olga.s@cool.design</div>
+                    </td>
+                    <td class="p-2 whitespace-nowrap">
+                      <div
+                        class="font-medium text-white bg-red-700 rounded-md text-center p-2 hover:cursor-pointer"
+                      >
+                        Eliminar
+                      </div>
+                    </td>
+                    <td class="p-2 whitespace-nowrap">
+                      <div
+                        class="font-medium text-center bg-yellow-300 p-2 rounded-md hover:cursor-default"
+                        role="button"
+                      >
+                        Actualiar
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="p-2 whitespace-nowrap">
+                      <div class="flex items-center">
+                        <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3">
+                          <img
+                            class="rounded-full"
+                            src="https://raw.githubusercontent.com/cruip/vuejs-admin-dashboard-template/main/src/images/user-36-09.jpg"
+                            width="40"
+                            height="40"
+                            alt="Burak Long"
+                          />
+                        </div>
+                        <div class="font-medium text-gray-800">Burak Long</div>
+                      </div>
+                    </td>
+                    <td class="p-2 whitespace-nowrap">
+                      <div class="text-left">longburak@gmail.com</div>
+                    </td>
+                    <td class="p-2 whitespace-nowrap">
+                      <div
+                        class="text-center font-medium text-white bg-red-700 rounded-md p-2 hover:cursor-pointer"
+                      >
+                        Eliminar
+                      </div>
+                    </td>
+                    <td class="p-2 whitespace-nowrap">
+                      <div
+                        class="font-medium text-center bg-yellow-300 p-2 rounded-md hover:cursor-default"
+                        role="button"
+                      >
+                        Actualiar
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div></Layout
+>
