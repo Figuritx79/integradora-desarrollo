@@ -1,0 +1,77 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Login">
+  <!-- <form action="post" class="flex justify-center items-center">
+    <div>
+      <h1>Inicia sesion</h1>
+    </div>
+    <div>
+      <label for="mail"></label>
+      <input type="text" name="" id="mail" />
+    </div>
+
+    <div>
+      <label for="pass"></label>
+      <input type="text" name="" id="pass" />
+    </div>
+  </form> -->
+  <div class="bg-[#F9FAFB] h-screen w-screen flex items-center">
+    <div class="h-max mx-auto flex flex-col items-center">
+      <a href="/"
+        ><img class="h-[40px] w-[47px] mb-5" src="/favicon.svg" alt="" /></a
+      >
+      <h1 class="text-xl font-bold text-center pb-10">
+        Inicia sesion con tu cuenta
+      </h1>
+      <div class="bg-white shadow-xl p-10 flex flex-col gap-4 text-sm">
+        <div>
+          <label class="text-gray-600 font-bold inline-block pb-2" for="email"
+            >Email</label
+          >
+          <input
+            class="border border-gray-400 focus:outline-slate-400 rounded-md w-full shadow-sm px-5 py-2"
+            type="email"
+            name="email"
+            placeholder="mehedi@jaman.com"
+          />
+        </div>
+        <div>
+          <label
+            class="text-gray-600 font-bold inline-block pb-2"
+            for="password">Password</label
+          >
+          <input
+            class="border border-gray-400 focus:outline-slate-400 rounded-md w-full shadow-sm px-5 py-2"
+            type="password"
+            name="password"
+            placeholder="******"
+          />
+        </div>
+        <div class="flex">
+          <div class="w-1/2">
+            <input type="checkbox" name="remeberMe" />
+            <label for="remeberMe">Recordar</label>
+          </div>
+          <div class="w-1/2">
+            <a class="font-bold text-blue-600" href="">Password Olvidada?</a>
+          </div>
+        </div>
+        <div>
+          <input
+            class="bg-[#1e293b] w-full py-2 rounded-md text-white font-bold cursor-pointer hover:bg-[#64748b]"
+            type="submit"
+            value="Login"
+          />
+        </div>
+
+        <p class="text-sm text-gray-500 mt-10">
+          No tienes cuenta? <a href="#" class="text-[#4F46E5] font-bold"
+            >Registrate</a
+          >
+        </p>
+      </div>
+    </div>
+  </div>
+</Layout>
