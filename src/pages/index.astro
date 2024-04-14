@@ -2,9 +2,52 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Navegation from "../components/Navegation.astro";
+import Button from "../components/Button.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Integradora">
   <Navegation />
-  <h1>Hello astro</h1>
+  <main>
+    <section class="mb-[8rem]">
+      <div
+        style="background-image: ur('../../public/bg2.jpg'));"
+        class="div_bg p-0 relative overflow-hidden flex items-center bg-cover pt-0 pb-0"
+      >
+        <span
+          class="bg-black absolute w-full h-full top-0 left-0 bg-cover bg-center opacity-[.8]"
+        ></span>
+        <div class="pr-6 pl-6 mr-auto ml-autos w-full z-[1]">
+          <div
+            class="flex flex-wrap justify-center flex-row items-center mr-6 ml-6 mt-0"
+          >
+            <div class="text-white mr-auto ml-auto text-center">
+              <h1 class="text-white text-[40px] font-bold">
+                ¡La coleccion esta aqui!
+              </h1>
+              <p class="text-xl font-normal mb-6 bg-wh">
+                Ahora es el momento de que esté bien ser grandioso. La gente en
+                este mundo evita a la gente por ser grandiosa. Por ser un color
+                brillante. Por destacar.
+              </p>
+              <button
+                class="bg-white text-[#334155] rounded-md p-2 button_image hover:cursor-pointer hover:animate-pop"
+              >
+                Ver nueva coleccion
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <style>
+      .div_bg {
+        background-image: url("/public//bg2.jpg");
+        min-height: 90vh;
+      }
+      .button_image {
+        box-shadow: 0 1px 2px #0c1a240f;
+        border: 1px solid #dde0e5;
+      }
+    </style>
+  </main>
 </Layout>
