@@ -21,7 +21,7 @@ const { text, text2, text3, text4 } = Astro.props;
   <nav class="flex">
     <ul class="list-none flex">
       <li class="hover:animate-tada">
-        <a class="inline-block padding text-cyan-950" href="dashboard"
+        <a class="inline-block padding text-cyan-950" href="/dashboard"
           >{text2}</a
         >
       </li>
@@ -29,7 +29,8 @@ const { text, text2, text3, text4 } = Astro.props;
         <a class="inline-block padding text-cyan-950" href="/shop">{text4}</a>
       </li>
       <li class="hover:animate-tada">
-        <a class="inline-block padding text-cyan-950" href="#">{text3}</a>
+        <a class="inline-block padding text-cyan-950" href="/product">{text3}</a
+        >
       </li>
       <a href="login">
         <button
